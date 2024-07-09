@@ -1,0 +1,41 @@
+button{
+  margin:25px;
+  font-size:10px;
+  width:80%;
+}
+.text{
+  height: 100rpx;
+  font-size:small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+.attention{
+  height: 20rpx;
+  font-size:small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(248, 23, 7);
+}
+.img{
+  width: 80rpx;
+  height: 80rpx;
+  
+}
+.textwater {
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+}
+
+.water-info {
+  display: flex;
+  flex-direction: row; /* 水平排列子元素 */
+  align-items: center; /* 垂直居中对齐 */
+  margin-left: 10px; /* 与图标保持一定间距 */
+}
+
+.water-level {
+  margin-left: 5px; /* 与文本保持一定间距 */
+}

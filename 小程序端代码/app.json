@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index"
+    ],
+    "window":{
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTitleText": "数据发送查看界面",
+      "navigationBarTextStyle": "black"
+    }, 
+  "sitemapLocation": "sitemap.json"
+}
