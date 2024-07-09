@@ -1,0 +1,41 @@
+<button class="weui-btn weui-btn_default weui-btn_mini" bindtap="OpenBaoMo">收起薄膜</button>
+<button class="weui-btn weui-btn_default weui-btn_mini" bindtap="DownBaoMo">放下薄膜</button>
+<button class="weui-btn weui-btn_default weui-btn_mini" bindtap="StopMotor">电机停动</button>
+<button class="weui-btn weui-btn_default weui-btn_mini" bindtap="OpenChou">开启抽水
+</button>
+<button class="weui-btn weui-btn_default weui-btn_mini" bindtap="CloseChou">关闭抽水</button>
+<button class="weui-btn weui-btn_default weui-btn_mini" bindtap="OpenPen">开启喷水</button>
+<button class="weui-btn weui-btn_default weui-btn_mini" bindtap="ClosePen">关闭喷水</button>
+<view class="text">
+  <image class="img" src="../images/温度.png"></image>
+  温度：{{temperature}}℃   
+  <image class="img" src="../images/湿度.png"></image>
+  湿度：{{humidity}}%
+  <image class="img" src="../images/光照.png"></image>
+  光照:{{Light}} CD
+  </view>
+  <view class="center-container">
+  <view class="text">
+    <image class="img" src="../images/水量.png"></image>
+    <view class="water-info">
+      储水量：
+      <view class="water-level">
+        <block wx:if="{{Water < 40}}">
+          水量少
+        </block>
+        <block wx:if="{{Water >= 40 && Water < 70}}">
+          水量中
+        </block>
+        <block wx:if="{{Water >= 70}}">
+          水量多
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="text">
+  <image class="img" src="../images/土壤含水量.png"></image>
+  土壤含水量: {{soil}}%
+  <image class="img" src="../images/二氧化碳.png"></image>
+  二氧化碳：0.0{{CO2}}%
+</view>
